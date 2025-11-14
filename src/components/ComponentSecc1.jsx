@@ -14,7 +14,6 @@ function ComponentSecc1({ titulo, texto, img }) {
 
             <div className='flex flex-col gap-2 w-[500px]'>
                 <span className='letra-color'>{titulo}</span>
-                <span> {""} </span>
                 <p>{texto}</p>
 
 

@@ -79,12 +79,12 @@ function SeccionUno() {
         {divs[currentDiv]}
       </div>
 
-      <div className='bg-gradient w-full h-[200px] flex flex-col justify-center items-center gap-3'>
+      <div className='bg-gradient w-full py-[30px] text-center flex flex-col justify-center items-center gap-3'>
 
         <p className="text-[#ffffffe8] font-semibold">SIMPLIFICA EL COMERCIO</p>
         <h2 className='text-[#ffffffe8]'>TODO LO QUE NECESITAS EN UNA SOLA PLATAFORMA</h2>
 
-        <button className=' p-4 rounded-full bg-[#ffffffe8] font-semibold text-[#805bf9] transition-all duration-300 hover:scale-105'>Solicitá tu pagina</button>
+        <button className='my-[10px] p-4 rounded-full bg-[#ffffffe8] font-semibold text-[#805bf9] transition-all duration-300 hover:scale-105'>Solicitá tu pagina</button>
         <style>
           {`
            .bg-gradient{

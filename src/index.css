@@ -42,7 +42,7 @@ p {
 }
 
 .highlight-text {
-    background: linear-gradient(100deg, #7340ff -10.08%, #12faad 5.08%, #ff0000 70%);
+    background: linear-gradient(68deg, #f65555 -16.08% -16.08%, #7612fa 25.08%, #fa12e3);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
