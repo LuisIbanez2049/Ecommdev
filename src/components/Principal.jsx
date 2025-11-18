@@ -75,16 +75,6 @@ function Principal() {
           ))}
         </div>
 
-        {/* {imgs.map(img => (
-            <img src={img} alt="" className='w-[100px] mx-4 opacity-80 hover:opacity-100'/>
-        ))}
-        {imgs.map(img => (
-            <img src={img} alt="" className='w-[100px] mx-4 opacity-80 hover:opacity-100'/>
-        ))}
-        {imgs.map(img => (
-            <img src={img} alt="" className='w-[100px] mx-4 opacity-80 hover:opacity-100'/>
-        ))} */}
-
 
       </div>
 

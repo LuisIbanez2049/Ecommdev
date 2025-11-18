@@ -4,6 +4,9 @@ import SeccionUno from './components/SeccionUno'
 import NavBar from './components/NavBar'
 import SeccionDos from './components/SeccionDos'
 import SeccionTres from './components/SeccionTres'
+import Servicios from './components/Servicios'
+import Planes from './components/Planes'
+import UltimaSeccion from './components/UltimaSeccion'
 
 function App() {
 
@@ -26,6 +29,9 @@ function App() {
       <SeccionUno/>
       <SeccionDos/>
       <SeccionTres/>
+      <Servicios/>
+      <Planes/>
+      <UltimaSeccion/>
     </>
   )
 }
