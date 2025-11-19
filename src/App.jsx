@@ -7,6 +7,7 @@ import SeccionTres from './components/SeccionTres'
 import Servicios from './components/Servicios'
 import Planes from './components/Planes'
 import UltimaSeccion from './components/UltimaSeccion'
+import Footer from './components/Footer'
 
 function App() {
 
@@ -32,6 +33,7 @@ function App() {
       <Servicios/>
       <Planes/>
       <UltimaSeccion/>
+      <Footer/>
     </>
   )
 }

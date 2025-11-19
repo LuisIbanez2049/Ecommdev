@@ -16,7 +16,7 @@ function SeccionDos() {
     { id: "pagos", label: "Pagos" },
     { id: "envios", label: "Envíos" },
     { id: "marketing", label: "Marketing" },
-    { id: "carritos", label: "Carritos_Abandonados" }
+    { id: "carritos", label: <>Carritos<span className="text-transparent">_</span>Abandonados</> }
   ];
 
 
