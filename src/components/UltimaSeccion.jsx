@@ -3,13 +3,14 @@ import PrincipalImg from "../assets/5Sec2.avif"
 import Icon1 from "../assets/icon1.png"
 import Icon2 from "../assets/icon2.png"
 import Icon3 from "../assets/icon3.png"
+import Logo from "../assets/ecommdevLogo3png.png"
 
 function UltimaSeccion() {
 
     return (
         <div className='w-full min-h-screen flex flex-col items-center'>
 
-            <div className='w-[90%] flex flex-row-reverse flex-wrap  justify-center items-center gap-10 mt-10 mb-20'>
+            <div className='w-[90%] flex flex-row-reverse flex-wrap justify-center items-center gap-10 mt-10 mb-20'>
 
 
 
@@ -63,7 +64,7 @@ function UltimaSeccion() {
 
 
             <div className='w-full text-center bg-[#8268fc] p-4 flex flex-row flex-wrap justify-center items-center gap-6'>
-                <img src={Icon1} alt="" />
+                <img src={Logo} alt="" className='w-[180px]'/>
                 <div className='flex flex-col gap-4 items-center'>
                     <h4 className='text-[25px] lg:text-[40px] font-bold text-slate-50 font-sans'>Ecommdev, la solución completa en ecommerce</h4>
                     <a href="http://" target="_blank" rel="noopener noreferrer" className='p-3 text-[12px] lg:text-[14px] bg-[#FF006E] m-auto lg:m-0 shadow-sm rounded-full text-gray-100 font-bold transition-all duration-300 hover:scale-105 '>

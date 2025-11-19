@@ -54,7 +54,7 @@ function SeccionUno() {
 
 
   return (
-    <div className='w-full min-h-screen flex flex-col items-center bg-[#F6F6F6]' id='uno'>
+    <div className='w-full min-h-screen flex flex-col items-center bg-[#F6F6F6]'>
 
 
       <div className='w-[90%] text-center mt-14 '>

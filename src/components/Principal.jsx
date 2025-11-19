@@ -15,7 +15,7 @@ function Principal() {
 
   const imgs = [Uno, Dos, Tres, Cuatro, Cinco, Seis, Siete, Ocho, Nueve, Diez];
   return (
-    <div className='w-full min-h-screen flex flex-col items-center'>
+    <div id='Uno' className='w-full min-h-screen flex flex-col items-center'>
 
       <div className='w-[90%] flex flex-row-reverse flex-wrap  justify-center items-center gap-10 mt-10 mb-20'>
 
@@ -35,7 +35,9 @@ function Principal() {
 
           <p>Ecommdev la plataforma ecommerce para empresas diseñada para el<br />cambio. Crear una tienda online nunca fue tan simple.</p>
 
-          <a href="http://" target="_blank" rel="noopener noreferrer" className='p-3 bg-[#FF006E] m-auto lg:m-0 shadow-sm rounded-full text-gray-100 font-bold transition-all duration-300 hover:scale-105'>Hablá con un experto</a>
+          <a href="http://" target="_blank" rel="noopener noreferrer" className='p-3 bg-[#FF006E] m-auto lg:m-0 shadow-sm rounded-full text-gray-100 font-bold transition-all duration-300 hover:scale-105'>
+            Hablá con un experto
+          </a>
         </div>
 
 

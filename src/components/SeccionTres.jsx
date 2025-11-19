@@ -58,7 +58,7 @@ function SeccionTres() {
 
 
   return (
-    <div className='w-full flex flex-col bg-[#F6F6F6] pb-10' id='tres'>
+    <div className='w-full flex flex-col bg-[#F6F6F6] pb-10'>
 
 
       <div className='w-full flex flex-col text-center items-center mt-14 mb-10 p-2'>

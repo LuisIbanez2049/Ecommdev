@@ -22,7 +22,7 @@ function SeccionDos() {
 
 
   return (
-    <div className='w-full min-h-screen flex flex-col items-center justify-center' id='dos'>
+    <div className='w-full min-h-screen flex flex-col items-center justify-center'>
       <div className='w-[90%] flex flex-col text-center'>
         <h1><span className='highlight-text'>Crece </span> con Ecommdev</h1>
         <p>Implementaciones y estrategias hechas a medida.</p>

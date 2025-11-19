@@ -155,11 +155,11 @@ function ServiceCard({ service }) {
 
 export default function Servicios() {
   return (
-    <div className="min-h-screen  py-12 px-4">
+    <div className="min-h-screen  py-12 px-4" id='Dos'>
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-bold  mb-4">
+          <h1 className="text-4xl md:text-5xl font-bold mt-[50px] mb-4">
             Catálogo de Servicios Digitales
           </h1>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
