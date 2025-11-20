@@ -77,7 +77,7 @@ function SeccionUno() {
 
       <div
         key={currentDiv}
-        className="w-full flex flex-col items-center"
+        className="w-full h-[650px] lg:h-[550px] flex flex-col items-center justify-center"
       >
         {divs[currentDiv]}
       </div>
@@ -154,7 +154,7 @@ p {
     font-size: 20px;
     font-weight: bold;
 }
-    
+
 
           `}
         </style>
