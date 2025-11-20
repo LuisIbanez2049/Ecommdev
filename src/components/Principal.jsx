@@ -10,6 +10,7 @@ import Siete from "../assets/ocn-argentina.avif"
 import Ocho from "../assets/rimmel.avif"
 import Nueve from "../assets/sonnos.avif"
 import Diez from "../assets/thonet-vander.avif"
+import "./components.css"
 
 function Principal() {
 
