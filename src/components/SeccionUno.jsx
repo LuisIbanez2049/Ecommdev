@@ -9,36 +9,39 @@ import ComponentSecc1 from './ComponentSecc1'
 function SeccionUno() {
 
 
+  const baseUrl = import.meta.env.VITE_APP_CONTACT_URL
+
+
   const [currentDiv, setCurrentDiv] = useState(0); // índice del div visible
 
   // Lista de "pantallas" o divs que vas a mostrar
   const divs = [
     <ComponentSecc1 titulo={"01. Gestiona con facilidad"}
-        texto={<><span className='font-bold'>Crear tu plataforma</span> de ecommerce omnicanal elegida por negocios de todo el mundo.</>}
-        img={U1} />,
+      texto={<><span className='font-bold'>Crear tu plataforma</span> de ecommerce omnicanal elegida por negocios de todo el mundo.</>}
+      img={U1} />,
 
-        <ComponentSecc1 titulo={"02. Medios de pago múltiples"}
-        texto={<>Acepta pagos online y presenciales con integraciones a 
+    <ComponentSecc1 titulo={"02. Medios de pago múltiples"}
+      texto={<>Acepta pagos online y presenciales con integraciones a
         <span className='font-bold'> Mercado Pago, Stripe, Getnet, Nave, Modo y más. </span>
         Ofrece a tus clientes la forma de pago más conveniente y nunca pierdas una venta.</>}
-        img={U2} />,
+      img={U2} />,
 
-        <ComponentSecc1 titulo={"03. Fácil envío y entrega"}
-        texto={<>Simplifica tus envíos con nuestras integraciones automáticas de 
+    <ComponentSecc1 titulo={"03. Fácil envío y entrega"}
+      texto={<>Simplifica tus envíos con nuestras integraciones automáticas de
         <span className='font-bold'> Correo Argentino, Andreani, OCA y más. </span>
         Crea etiquetas, gestiona pedidos y realiza seguimientos de tus envíos en un solo lugar.</>}
-        img={U3} />,
+      img={U3} />,
 
-        <ComponentSecc1 titulo={"04. Optimización de comercio"}
-        texto={<>Habilita una mejor experiencia de comercio electrónico 
+    <ComponentSecc1 titulo={"04. Optimización de comercio"}
+      texto={<>Habilita una mejor experiencia de comercio electrónico
         mediante el uso de segmentación automatizada de precios y clientes, órdenes de compra y condiciones de pago</>}
-        img={U4} />,
+      img={U4} />,
 
-        <ComponentSecc1 titulo={"05. Experiencia mejorada"}
-        texto={<>Las experiencias de compra tradicionales no se acercan a lo que esperan los compradores modernos. 
-        Ecommdev permite crear grandes catálogos, con segmentación de precios y clientes en cuestión de minutos. 
-        </>}
-        img={U5} />
+    <ComponentSecc1 titulo={"05. Experiencia mejorada"}
+      texto={<>Las experiencias de compra tradicionales no se acercan a lo que esperan los compradores modernos.
+        Ecommdev permite crear grandes catálogos, con segmentación de precios y clientes en cuestión de minutos.
+      </>}
+      img={U5} />
   ];
 
   useEffect(() => {
@@ -84,7 +87,10 @@ function SeccionUno() {
         <p className="text-[#ffffffe8] font-semibold">SIMPLIFICA EL COMERCIO</p>
         <h2 className='text-[#ffffffe8]'>TODO LO QUE NECESITAS EN UNA SOLA PLATAFORMA</h2>
 
-        <button className='my-[10px] p-4 rounded-full bg-[#ffffffe8] font-semibold text-[#805bf9] transition-all duration-300 hover:scale-105'>Solicitá tu pagina</button>
+        <a href={baseUrl} target="_blank" rel="noopener noreferrer"
+          className='my-[10px] p-4 rounded-full bg-[#ffffffe8] font-semibold text-[#805bf9] transition-all duration-300 hover:scale-105'>
+          Solicitá tu pagina
+        </a>
         <style>
           {`
            .bg-gradient{

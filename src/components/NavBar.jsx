@@ -3,6 +3,8 @@ import Logo from "../assets/soloLetraPNG-ecommdev.png"
 
 function NavBar() {
 
+  const baseUrl = import.meta.env.VITE_APP_CONTACT_URL
+
 
   const [isMobileView, setIsMobileView] = useState(window.innerWidth < 450);
   const [verBotones, setVerBotones] = useState(false);
@@ -47,8 +49,7 @@ function NavBar() {
           <a href="#" className=' transition-all duration-150 hover:text-[#8268fc]'>Inicio</a>
           <a href="#Dos" className='transition-all duration-150 hover:text-[#8268fc]'>Servicios</a>
           <a href="#Tres" className='transition-all duration-150 hover:text-[#8268fc]'>Planes</a>
-          <a href="" className=' text-slate-50 bg-[#FF006E] p-2 rounded-full mx-[10px] transition-all duration-300 animate-pulse hover:scale-105'>Empezar ahora</a>
-
+          <a href={baseUrl} target="_blank" rel="noopener noreferrer" className=' text-slate-50 bg-[#FF006E] p-2 rounded-full mx-[10px] transition-all duration-300 animate-pulse hover:scale-105'>Empezar ahora</a>
         </div>
       </div>
 
@@ -80,7 +81,7 @@ function NavBar() {
             <a href="#" className=' transition-all duration-150 hover:text-[#8268fc]'>Inicio</a>
             <a href="#Dos" className='transition-all duration-150 hover:text-[#8268fc]'>Servicios</a>
             <a href="#Tres" className='transition-all duration-150 hover:text-[#8268fc]'>Planes</a>
-            <a href="#Tres" className='transition-all duration-150 hover:text-[#8268fc] p-1 bg-[#ff00008a] rounded-full animate-bounce'>Contacto</a>
+            <a href={baseUrl} target="_blank" rel="noopener noreferrer" className='transition-all duration-150 hover:text-[#8268fc] p-1 bg-[#ff00008a] rounded-full animate-bounce'>Contacto</a>
             {/* <a href="" className=' text-slate-50 bg-[#FF006E] p-2 rounded-full mx-[10px] transition-all duration-300 animate-pulse hover:scale-105'>Empezar ahora</a> */}
           </div>
         </div>

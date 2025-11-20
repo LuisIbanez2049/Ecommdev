@@ -2,6 +2,10 @@ import React from 'react'
 import U1 from "../assets/1Sec22.avif"
 
 function ComponentSecc2({ titulo, texto, img, arrayLi }) {
+
+    const baseUrl = import.meta.env.VITE_APP_CONTACT_URL
+
+
     return (
         <div className='w-full p-2 lg:w-[80%] flex flex-row-reverse flex-wrap  justify-center items-center gap-10 mt-10 mb-20 border border-gray-300 rounded-xl'>
 
@@ -25,7 +29,7 @@ function ComponentSecc2({ titulo, texto, img, arrayLi }) {
                     })}
                 </div>
 
-                <a href="http://" target="_blank" rel="noopener noreferrer" className='bg-gradient m-auto lg:m-0 p-4 rounded-full shadow-lg w-[150px] my-[10px] transition-all duration-300 hover:scale-105'>
+                <a href={baseUrl} target="_blank" rel="noopener noreferrer" className='bg-gradient m-auto lg:m-0 p-4 rounded-full shadow-lg w-[150px] my-[10px] transition-all duration-300 hover:scale-105'>
                 <h4 className='text-center text-slate-50 font-semibold'>Comenzarahora</h4>
                 </a>
                 

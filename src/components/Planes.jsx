@@ -64,6 +64,11 @@ const plans = [
 ];
 
 function PlanCard({ plan }) {
+
+
+  const baseUrl = import.meta.env.VITE_APP_CONTACT_URL
+
+
   const colors = {
     green: {
       bg: "bg-green-50",
@@ -136,9 +141,11 @@ function PlanCard({ plan }) {
       </div>
 
       {/* CTA Button */}
-      <button className={`w-full ${colorClasses.button} text-white font-semibold py-3 px-6 rounded-lg hover:shadow-md transition-all duration-200`}>
-        Contratar ahora
-      </button>
+      <a href={baseUrl} target="_blank" rel="noopener noreferrer">
+        <div className={`w-full ${colorClasses.button} text-white text-center font-semibold py-3 px-6 rounded-lg hover:shadow-md transition-all duration-200`}>
+          Contratar ahora
+        </div>
+      </a>
     </div>
   );
 }

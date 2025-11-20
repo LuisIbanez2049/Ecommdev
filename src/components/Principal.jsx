@@ -13,6 +13,8 @@ import Diez from "../assets/thonet-vander.avif"
 
 function Principal() {
 
+  const baseUrl = import.meta.env.VITE_APP_CONTACT_URL
+
   const imgs = [Uno, Dos, Tres, Cuatro, Cinco, Seis, Siete, Ocho, Nueve, Diez];
   return (
     <div id='Uno' className='w-full min-h-screen flex flex-col items-center'>
@@ -35,7 +37,7 @@ function Principal() {
 
           <p>Ecommdev la plataforma ecommerce para empresas diseñada para el<br />cambio. Crear una tienda online nunca fue tan simple.</p>
 
-          <a href="http://" target="_blank" rel="noopener noreferrer" className='p-3 bg-[#FF006E] m-auto lg:m-0 shadow-sm rounded-full text-gray-100 font-bold transition-all duration-300 hover:scale-105'>
+          <a href={baseUrl} target="_blank" rel="noopener noreferrer" className='p-3 bg-[#FF006E] m-auto lg:m-0 shadow-sm rounded-full text-gray-100 font-bold transition-all duration-300 hover:scale-105'>
             Hablá con un experto
           </a>
         </div>

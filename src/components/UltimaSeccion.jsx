@@ -7,6 +7,8 @@ import Logo from "../assets/ecommdevLogo3png.png"
 
 function UltimaSeccion() {
 
+    const baseUrl = import.meta.env.VITE_APP_CONTACT_URL
+
     return (
         <div className='w-full min-h-screen flex flex-col items-center'>
 
@@ -54,7 +56,7 @@ function UltimaSeccion() {
                     </div>
 
 
-                    <a href="http://" target="_blank" rel="noopener noreferrer" className='p-3 bg-[#FF006E] m-auto lg:m-0 shadow-sm rounded-full text-gray-100 font-bold transition-all duration-300 hover:scale-105'>
+                    <a href={baseUrl} target="_blank" rel="noopener noreferrer" className='p-3 bg-[#FF006E] m-auto lg:m-0 shadow-sm rounded-full text-gray-100 font-bold transition-all duration-300 hover:scale-105'>
                         Quiero empezar ahora
                     </a>
                 </div>
@@ -67,7 +69,7 @@ function UltimaSeccion() {
                 <img src={Logo} alt="" className='w-[180px]'/>
                 <div className='flex flex-col gap-4 items-center'>
                     <h4 className='text-[25px] lg:text-[40px] font-bold text-slate-50 font-sans'>Ecommdev, la solución completa en ecommerce</h4>
-                    <a href="http://" target="_blank" rel="noopener noreferrer" className='p-3 text-[12px] lg:text-[14px] bg-[#FF006E] m-auto lg:m-0 shadow-sm rounded-full text-gray-100 font-bold transition-all duration-300 hover:scale-105 '>
+                    <a href={baseUrl} target="_blank" rel="noopener noreferrer" className='p-3 text-[12px] lg:text-[14px] bg-[#FF006E] m-auto lg:m-0 shadow-sm rounded-full text-gray-100 font-bold transition-all duration-300 hover:scale-105 '>
                         Solicitar ahora
                     </a>
                 </div>

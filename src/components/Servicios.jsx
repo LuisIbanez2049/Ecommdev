@@ -87,6 +87,10 @@ const services = [
 ];
 
 function ServiceCard({ service }) {
+
+  const baseUrl = import.meta.env.VITE_APP_CONTACT_URL
+
+  
   return (
     <div className="bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition-shadow duration-300">
       {/* Decorative Top Bar */}
@@ -145,15 +149,21 @@ function ServiceCard({ service }) {
         </div>
 
         {/* CTA Button */}
-        <button className="w-full bg-gradient-to-r from-purple-600 to-blue-600 text-white font-semibold py-3 px-6 rounded-2xl hover:from-purple-700 hover:to-blue-700 transition-all duration-200 shadow-md hover:shadow-lg">
+        <a href={baseUrl} target="_blank" rel="noopener noreferrer">
+        <div className="w-full text-center bg-gradient-to-r from-purple-600 to-blue-600 text-white font-semibold py-3 px-6 rounded-2xl hover:from-purple-700 hover:to-blue-700 transition-all duration-200 shadow-md hover:shadow-lg">
           {service.price === "Precio a consultar" ? "Consultar ahora" : "Contratar servicio"}
-        </button>
+        </div>
+        </a>
       </div>
     </div>
   );
 }
 
 export default function Servicios() {
+
+
+  const baseUrl = import.meta.env.VITE_APP_CONTACT_URL
+  
   return (
     <div className="min-h-screen  py-12 px-4" id='Dos'>
       <div className="max-w-7xl mx-auto">

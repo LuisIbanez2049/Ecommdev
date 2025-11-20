@@ -7,6 +7,9 @@ import U4 from "../assets/4Sec3.avif"
 function SeccionTres() {
 
 
+  const baseUrl = import.meta.env.VITE_APP_CONTACT_URL
+
+
   const [current, setCurrent] = useState(0);
   const touchStartX = useRef(0);
   const touchEndX = useRef(0);
@@ -78,7 +81,7 @@ function SeccionTres() {
               <img src={item.img} className="w-48 h-48 object-contain" />
               <h3 className="text-xl font-semibold mt-4">{item.title}</h3>
               <p className="text-gray-600 mt-2">{item.text}</p>
-              <a href="http://" target="_blank" rel="noopener noreferrer" className='mt-4 px-5 py-2 bg-blue-500 text-white rounded-full'>
+              <a href={baseUrl} target="_blank" rel="noopener noreferrer" className='mt-4 px-5 py-2 bg-blue-500 text-white rounded-full transition-all duration-200 hover:scale-105'>
                 Saber más
               </a>
               {/* <button className="mt-4 px-5 py-2 bg-blue-500 text-white rounded-full">
@@ -104,9 +107,13 @@ function SeccionTres() {
                 <img src={item.img} className="w-48 h-48 object-contain mx-auto" />
                 <h3 className="text-xl font-semibold mt-4">{item.title}</h3>
                 <p className="text-gray-600 mt-2">{item.text}</p>
-                <button className="mt-4 px-5 py-2 bg-blue-500 text-white rounded-full">
+                {/* <button className="mt-4 px-5 py-2 bg-blue-500 text-white rounded-full">
                   Saber más
-                </button>
+                </button> */}
+
+                <a href={baseUrl} target="_blank" rel="noopener noreferrer" className='mt-4 px-5 py-2 bg-blue-500 text-white rounded-full transition-all duration-200 hover:scale-105'>
+                Saber más
+              </a>
               </div>
             ))}
           </div>

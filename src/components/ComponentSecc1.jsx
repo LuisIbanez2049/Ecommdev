@@ -3,6 +3,9 @@ import React, { useEffect } from 'react'
 function ComponentSecc1({ titulo, texto, img }) {
 
 
+    
+
+
     return (
         <div className='w-[80%] flex flex-row-reverse flex-wrap  justify-center items-center gap-10 mt-10 mb-20'>
 
